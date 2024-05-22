@@ -1,0 +1,14 @@
+{
+  "name": "juegos-api",
+  "version": "1.0.0",
+  "description": "Una breve descripción de tu proyecto",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Tu nombre",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
