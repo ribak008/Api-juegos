@@ -19,15 +19,15 @@ app.get('/api/games', (req, res) => {
 
 
 // Ruta para obtener detalles de un juego específico por su ID
-// app.get('/api/games/:id', (req, res) => {
-//     const gameId = parseInt(req.params.id);
-//     const game = games.find(game => game.id === gameId);
-//     if (!game) {
-//         res.status(404).json({ message: 'Juego no encontrado' });
-//     } else {
-//         res.json(game);
-//     }
-// });
+ app.get('/api/games/:id', (req, res) => {
+     const gameId = parseInt(req.params.id);
+    const game = games.find(game => game.id === gameId);
+    if (!game) {
+        res.status(404).json({ message: 'Juego no encontrado' });
+     } else {
+         res.json(game);
+     }
+ });
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
